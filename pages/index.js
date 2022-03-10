@@ -1,11 +1,16 @@
-import ClaimButton from "../components/claim";
+import { Box, Text } from "@chakra-ui/react";
+import ConnectButton from "../components/connectButton.js";
 
 export default function Home() {
   return (
-    <div>
-      <h1>EVMOS交互一次领取空投</h1>
-      <div>小费：0.1 EVMOS</div>
-      <ClaimButton></ClaimButton>
-    </div>
+    <Box>
+      <Box py="30px" textAlign="center">
+        <Text fontSize="4xl">EVMOS合约交互领取空投</Text>
+      </Box>
+      <Box textAlign="center" fontSize="14px" color="#000">
+        小费：0.5 <em>EVMOS</em>
+      </Box>
+      <ConnectButton></ConnectButton>
+    </Box>
   );
 }
